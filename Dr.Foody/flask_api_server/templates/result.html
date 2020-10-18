@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULT</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/styles.css')}}">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div id="brandname">
+                ML App
+            </div>
+            <h2>Spam Detector For SMS Messages</h2>
+        </div>
+    </header>
+    <p style="color:blue;font-size:20;text-align:center;"><b>Result for Comment</b></p>
+    <div class="results"></div>
+
+    {% if prediction == "female" %}
+    <h2 style="color:red;">female</h2>
+    {% elif prediction == "male" %}
+    <h2 style="color:blue;">male</h2>
+    {% endif %}
+</body>
+</html>
