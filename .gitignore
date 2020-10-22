@@ -22,7 +22,6 @@ get-pip.py
 myapp/
 naver_crawling.py
 reviewHBLOGHASD.txt
-tasteNUMBER.py
 wordsBULDAK2014ASD.txt
 test_docs.json
 train_docs.json
